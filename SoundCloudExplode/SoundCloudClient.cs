@@ -87,6 +87,7 @@ public class SoundCloudClient
     public SoundCloudClient(string clientId) : this(Http.Client)
     {
         ClientId = clientId;
+        _endpoint.ClientId = clientId;
     }
 
     /// <summary>
