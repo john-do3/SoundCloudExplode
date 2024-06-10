@@ -123,7 +123,7 @@ public class PlaylistClient
 
             // Tracks are returned unordered here even though the ids are in the right order in the url
             var response = await _http.ExecuteGetAsync(
-                $"https://api-v2.soundcloud.com/tracks?ids={idsStr}&limit={limit}&offset={offset}&client_id={Constants.ClientId}",
+                $"https://api-v2.soundcloud.com/tracks?ids={idsStr}&limit={limit}&offset={offset}&client_id={_endpoint.ClientId}",
                 cancellationToken
             );
 
